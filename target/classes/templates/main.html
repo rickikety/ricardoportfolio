@@ -1,0 +1,442 @@
+<!doctype html>
+<html lang="pt-br"
+	xmlns:th="http://thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+  <head>    
+
+    <!-- Icons -->
+    <link rel="icon" th:href="@{/imgs/iconeMain.png}">
+    
+    <!-- validate -->
+    <link rel="stylesheet" href="https://jqueryvalidation.org/files/demo/site-demos.css">
+    
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" th:href="@{/node_modules/bootstrap/compiler/bootstrap.css}">
+      
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+      
+    <link rel="stylesheet" th:href="@{/node_modules/font-awesome/css/font-awesome.css}">
+
+    <title>Meu Portfolio</title>
+      
+  </head>
+  <body>
+
+    <!-- código inicia aqui -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-gradient-primary ">
+
+        <div class="container">
+            <a href="#" class="navbar-brand h1 mb-0">Ricardo</a>
+
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#NavSite">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="NavSite">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a href="#InicioI" class="nav-link scroll">Quem sou eu</a></li>
+                    <li class="nav-item"><a href="#FocoI" class="nav-link scroll">Foco</a></li>
+                    <li class="nav-item"><a href="#ConhecimentosI" class="nav-link scroll">Domínio</a></li>
+                    <li class="nav-item"><a href="#ContatoI" class="nav-link scroll">Contato</a></li>
+                </ul>
+            </div>
+        </div>  
+    </nav> <!-- fim .navbar -->
+
+    <div id="carouselSite" class="carousel slide d-none d-lg-block" data-ride="carousel" >
+        <ol class="carousel-indicators">
+            <li data-taget="#carouselSite" data-slide-to="0" class="active"></li>
+            <li data-taget="#carouselSite" data-slide-to="1" ></li>
+            <li data-taget="#carouselSite" data-slide-to="2" ></li>
+        </ol>
+
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img th:src="@{/imgs/img-slide-01.jpg}" class="img-fluid d-block"/>
+                <div class="carousel-caption d-none d-lg-block text-light fundo">
+                    
+                    <h1 >Apps e WebSites exclusivos!</h1>
+                    <p class="lead ">Já imaginou, você com seu próprio Site ou App?</p>
+                    
+                </div>
+            </div>
+            <div class="carousel-item ">
+                <img th:src="@{/imgs/img-slide-02.jpg}" class="img-fluid d-block"/>
+                <div class="carousel-caption d-none d-lg-block text-light fundo">
+                        
+                    <h1>Modernidade!</h1>
+                    <p class="lead">Soluções inteligentes ao seu alcance!</p>
+                        
+                </div>
+            </div>
+            <div class="carousel-item">
+                 <img th:src="@{/imgs/img-slide-03.jpg}" class="img-fluid d-block"/>
+                 <div class="carousel-caption d-none d-lg-block text-light fundo">
+                            
+                    <h1>O que está esperando?</h1>
+                    <p class="lead">Solicite um orçamento, vamos fechar um bom negócio!</p>
+                            
+                </div>
+            </div>
+        </div>
+
+        <a class="carousel-control-prev" href="#carouselSite" role="button" data-slide="prev">
+          
+            <span class="carousel-control-prev-icon"></span>
+            <span class="sr-only">Anterior</span>
+                
+        </a>
+        <a class="carousel-control-next" href="#carouselSite" role="button" data-slide="next">
+            
+            <span class="carousel-control-next-icon"></span>
+            <span class="sr-only">Avançar</span>
+            
+        </a>
+    </div> <!-- fim #carouselSite -->
+    
+    <div class="container">
+        <div id="InicioI">
+            <div class="row text-center">
+                <div class="col-md-8 col-12 text-center mt-5 mx-auto">
+                    <h1 class="display-3" >Ricardo dos Santos</h1>
+                    <p class="ml-auto mb-4" >Desenvolvedor Web & Android</p>
+
+                    <p class="lead text-justify paragrafo">
+                            Me chamo Ricardo, sou brasileiro, casado e pai do Aquiles. Apaixonado em desenvolvimento 
+                            e tecnologia, começei meus passos como programador em agosto de 2014, e desde então não parei mais. 
+                            Especializado em desenvolvimento <i>Web</i> e <i>Mobile</i> (Android), hoje tenho minha carreira 
+                            como desenvolvedor <i>Home Office</i>.
+                    </p>
+                </div>
+                <div class="col-4 d-none mt-5 d-lg-block" >
+                    <img id="minhaImagem" th:src="@{/imgs/WhatsApp Image 2018-02-28 at 13.00.02.jpeg}" />
+                </div>
+            </div>
+        </div> <!-- fim #InicioI -->
+
+		<!-- Retirei daqui -->
+
+        <div class="row justify-content-sm-center" id="FocoI">
+
+            <div class="text-center col-12 mt-5 mb-5">
+                <h1 class="display-4"> Foco </h1>
+            </div>
+
+            <div class="col-md-4 col-sm-6">
+                <div class="card mb-5">
+                    <img class="card-img-top imagemCard" th:src="@{/imgs/img-01.jpg}"/>
+                    <div class="card-body">
+                        <h4 class="card-title">Android</h4>
+                        <h6 class="card-subtitle mb-2 text-muted" >Aplicativos Nativo</h6>
+                        <p class="card-text"> Desenvolvimento de aplicativos exclusivos, feito a partir do zero.</p>
+                    </div>
+                    <div class="card-body">
+                        <a href="#" data-toggle="modal" data-target="#modalAndroid" class="card-link">Continuar lendo...</a>
+                    </div>
+                </div>
+            </div> <!-- fim card -->
+
+            <div class="col-md-4 col-sm-6">
+                 <div class="card mb-5">
+                    <img class="card-img-top imagemCard" th:src="@{/imgs/img-02.jpg}"/>
+                    <div class="card-body">
+                        <h4 class="card-title">Java Web</h4>
+                        <h6 class="card-subtitle mb-2 text-muted" >Desenvolvimento Back-end</h6>
+                        <p class="card-text"> Desenvolvimento de toda a parte de servidor, banco de dados dentre outros.</p>
+                    </div>
+                    <div class="card-body">
+                        <a href="#" data-toggle="modal" data-target="#modalJava" class="card-link">Continuar lendo...</a>
+                    </div>
+                </div>
+             </div> <!-- fim card -->
+
+            <div class="col-md-4 col-sm-6">
+                <div class="card mb-5">
+                    <img class="card-img-top imagemCard" th:src="@{/imgs/img-03.png}"/>
+                    <div class="card-body">
+                        <h4 class="card-title">Web Sites</h4>
+                        <h6 class="card-subtitle mb-2 text-muted" >Desenvolvimento Front-end</h6>
+                        <p class="card-text"> Desenvolvimento da interface gráfica de uma aplicação Web.</p>
+                    </div>
+                    <div class="card-body">
+                         <a href="#" data-toggle="modal" data-target="#modalWeb" class="card-link">Continuar lendo...</a>
+                    </div>
+                </div>
+             </div> <!-- fim card -->
+
+        </div> <!-- fim #ProjetoI -->
+        
+        <div class="row justify-content-sm-center" id="ConhecimentosI">
+            <div class="text-center col-12 mt-5">
+                <h1 class="display-4"> Domínio </h1>
+            </div>
+            <div class="text-center col-12">
+                <canvas class="my-4 w-100 container" id="myChart" width="900" height="380"></canvas> 
+            </div>
+        </div> <!-- fim #ConhecimentoI -->
+
+        <div class="row" id="ContatoI">
+            <div class="text-center col-12 mt-5 ">
+                <h1 class="display-4"> Contato </h1>
+                <p class="ml-auto" > Interessou? Me mande sua opnião, ou solicite um orçamento! </p>
+            </div>
+        </div>
+        <div class="row justify-content-center " >
+            <div class="col-sm-12 col-md-10 col-lg-8" >
+            	
+                <div class="alert alert-success"  th:if="${not #strings.isEmpty(msgOk)}">
+                	<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+					<span th:text="${msgOk}"></span>
+				</div>
+    			<div class="alert alert-danger " role="alert" th:if="${not #strings.isEmpty(msgErro)}">
+    				<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+					<span th:text="${msgErro}"></span>
+				</div>
+            	
+                <form method="post" id="myForm">
+                    <div class="form-row " >
+                        <div class="form-group col-sm-12">
+                          <label for="entradaNome">Nome</label>
+                          <input type="text" class="form-control" id="entradaNome" placeholder="Nome" name="nome"/>  
+                        </div>
+                    </div>
+                    <div class="form-row " >
+                        <div class="form-group col-sm-12">
+                          <label for="entradaEmail">E-mail *</label>
+                          <input type="email" class="form-control" id="entradaEmail" placeholder="Email" name="email"/>  
+                        </div>
+                    </div>
+                    <div class="form-row " >
+                        <div class="form-group col-sm-12">
+                            <label for="entradaNome">Assunto *</label>
+                            <input type="text" class="form-control" id="entradaAssunto" placeholder="Assunto" name="assunto"/>  
+                        </div>
+                    </div>
+                    <div class="form-row " >
+                        <div class="form-group col-sm-12">
+                            <label for="entradaNome">Mensagem *</label>
+                            <textarea type="text" class="form-control" id="entradaMensagem" placeholder="Digite aqui sua mensagem..." name="mensagem"></textarea>  
+                        </div>
+                    </div>
+                    <div class="form-row botao" >
+                        <div class="col-sm-12" >
+                            <button type="reset" class="btn btn-secondary">Limpar</button>
+                            <button type="submit" class="btn btn-primary">Enviar</button>
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+        </div> <!-- fim #ContatoI -->
+
+
+    </div> <!-- fim .container -->
+    <section class="footer-site">
+        <div class="container">
+            <hr>
+            <blockquote class="blockquote text-center" >
+                <footer class="blockquote-footer">&copy; <cite title="Titulo"> 2018, Copyright. Todos os direitos reservados.</cite></footer>
+            </blockquote>
+        </div>
+    </section>
+
+    <!-- Modal -->
+    <div class="modal fade" id="modalAndroid" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" >Android Nativo</h5>
+                    <button type="button" class="close" data-dismiss="modal">
+                        <span>&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-12">
+                                <h5>Apps incriveis</h5>
+                                <p class="paragrafo">
+                                    Já imaginou, você ou sua empresa com um App exclusivo?
+                                    Utilizando os recursos nativos mais usados no momento: mapas estilizados,
+                                    localização, armazenamento interno, fotos, videos, musicas e outras funções a mais.
+                                    Tudo isso com um ótimo preço. 
+                                </p>
+                                <p class="paragrafo">
+                                    Caso tenha o interesse, entre em contato comigo, faremos um orçamento sem compromisso!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="modalJava" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Java Web</h5>
+                    <button type="button" class="close" data-dismiss="modal">
+                        <span>&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-12">
+                                <h5>Back-End Java</h5>
+                                <p class="paragrafo">
+                                   	Construções de Web Services ou Back-End de sites, com a tecnologia Spring Boot.
+                                   	Acesso a banco de dados externos e toda estrutura de um servidor, mantendo uma preocupação
+                                   	em qualidade de velocidade de acesso. Maneira recomendada para banco de dados compartilhado
+                                   	tanto em Apps quanto Sites. Preocupação também com a segurança dos dados armazenados.
+                                </p>
+                                <p class="paragrafo">
+                                    Caso tenha o interesse, entre em contato comigo, faremos um orçamento sem compromisso!
+                                </p>
+                            </div>
+                        </div>
+                     </div>
+                 </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
+                 </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="modalWeb" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" >Front-end Full</h5>
+                    <button type="button" class="close" data-dismiss="modal">
+                        <span>&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-12">
+                                <h5>HTML5, CSS3 e Bootstrap</h5>
+                                <p class="paragrafo">
+                                    Desenvolvimento Front-End em Web sites, utilizando tecnologias como HTML5, CSS3 e Bootstrap.
+                                    Telas responsivas, ajustando automaticamente de acordo com o aparelho usado para o acesso,
+                                    com fácil manutenção e acesso a tecnologias Back-End (Servidores, Banco de dados e etc...).
+                                </p>
+                                <p class="paragrafo">
+                                    Caso tenha o interesse, entre em contato comigo, faremos um orçamento sem compromisso!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                     <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+     </div>
+    
+    <!-- código termina aqui -->
+
+    <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js'></script>
+    <script type="text/javascript">
+
+        jQuery(document).ready(function($) {
+           $(".scroll").click(function(event){
+               event.preventDefault();
+               $('html,body').animate({scrollTop:$(this.hash).offset().top}, 600);
+           });
+       });
+       
+       jQuery(document).ready(function($) {
+        $(".voltar").click(function(event){
+          event.preventDefault();
+          $('html,body').animate({scrollTop:$(this.hash).offset().top}, 600);
+        });
+       });
+       
+    </script>
+
+    <!-- Gráficos -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
+	<script>
+	    var ctx = document.getElementById("myChart");
+	    var myChart = new Chart(ctx, {
+		type: 'line',
+		data: {
+		  labels: ['C++', 'Python', 'SQL', 'Java', 'Android', 'Web'],
+		  datasets: [{
+		    data: ['70', '75', '70', '87','80', '80'],
+		    lineTension: 0,
+		    backgroundColor: 'transparent',
+		    borderColor: '#007bff',
+		    borderWidth: 4,
+		    pointBackgroundColor: '#007bff'
+		  }]
+		},
+		options: {
+		  scales: {
+		    yAxes: [{
+		      ticks: {
+		        beginAtZero: true
+		      }
+		    }]
+		  },
+		  legend: {
+		    display: false,
+		  }
+		}
+	      });
+	</script>
+	
+	<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
+	<script>
+	// just for the demos, avoids form submit
+	jQuery.validator.setDefaults({
+	  debug: true,
+	  success: "valid"
+	});
+	$( "#myform" ).validate({
+	  rules: {
+	    entradaEmail: {
+	      required: true,
+	      email: true
+	    }
+	  }
+	});
+	</script>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script th:src="@{/node_modules/jquery/dist/jquery.js}"></script>
+    <script th:src="@{/node_modules/popper.js/dist/umd/popper.js}"></script>
+    <script th:src="@{/node_modules/bootstrap/dist/js/bootstrap.js}"></script>
+      
+    <script>
+        
+        $(function () {
+        
+            $('[data-toggle="popover"]').popover()
+        
+        })
+      
+    </script>
+
+  </body>
+</html>

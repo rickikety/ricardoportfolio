@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="pt-br"
+	xmlns:th="http://thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+  <head> 
+
+  <!-- Icons -->
+  <link rel="icon" th:href="@{/imgs/iconeIndex3.png}">
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" th:href="@{/node_modules/bootstrap/compiler/bootstrap.css}">
+      
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+      
+    <link rel="stylesheet" th:href="@{/node_modules/font-awesome/css/font-awesome.css}">
+
+       <title>Bem-Vindo</title>
+      
+  </head>
+  <body>
+
+    <!-- código inicia aqui -->
+
+    <section class="header-site ">
+      <div class="container">
+        <div class="row justify-content-center fundo fundop">
+          <div class="col-xs-12 ">
+            <h1 class="text-center font-h1">BEM-VINDO</h1> 
+            <p class=" lead text-center font-p">Meu Portfolio</p>         
+            <p class="text-center">
+             <a class="btn btn-primary " th:href="@{/main}">Entrar </a>
+            </p>
+          </div>
+        </div>   
+      </div>
+    </section> <!-- fim .header-site -->
+
+    <div class="container text-right blockquote-footer">
+
+          Foto da <cite title="titulo">Matthew Henry</cite> do <a href="https://pt.shopify.com/burst/computador?utm_campaign=photo_credit&amp;utm_content=Banco+de+imagens+gr%C3%A1tis+de+Programa%C3%A7%C3%A3o+no+laptop+%E2%80%94+Imagens+em+HD&amp;utm_medium=referral&amp;utm_source=credit">Burst</a>
+    </div>
+
+
+    <section class="content-site">
+
+      <div class=" container ">
+        <div class="row">
+
+          <div class="col-xs-12 col-lg-12">
+              <h1 id="titulo" class="text-center">
+                  A Quarta Revolução!
+              </h1> <br/>
+
+              <p class="lead text-justify paragrafo">
+                Fazendo algumas pesquisas na internet, nada mais vemos do que páginas relacionadas
+                com algum assunto que queremos descobrir ou aprender, não é mesmo? Vendo tantos endereços com os
+                mais variados conteúdos, percebi o quão ligado o mundo esta com a internet, isso de maneira
+                extremamente direta como se fosse um mundo novo ao nosso redor. Você já pensou em fazer parte desse novo mundo? ter seu prório WebSite
+                ou até mesmo seu próprio Aplicativo em seu celular? Se você deseja se conectar de maneira mais intensa,
+                seja para um projeto pessoal, divulgação ou até mesmo para dar um UP em seus negócios, está no lugar
+                certo! Clique em <a th:href="@{/main}">Entrar</a> e conheça um pouco do meu trabalho, podemos fechar um bom negócio! 
+                te vejo lá!   
+              </p>
+
+          </div>
+
+        </div>
+      </div>
+      
+    </section> <!-- fim .content-site -->
+
+    <section class="footer-site">
+
+      <div class="container">
+      <hr>
+        <blockquote class="blockquote text-center">
+                
+            <p class="mb-0">O pessimista queixa-se do vento, o otimista espera que ele mude e o realista ajusta as velas.</p>
+            <footer class="blockquote-footer"><cite title="Titulo"> Willian George Ward</cite></footer>
+            
+        </blockquote>
+      </div>
+      
+    </section> <!-- fim .footer-site -->
+
+
+
+  	
+      
+    <!-- código termina aqui -->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script th:src="@{/node_modules/jquery/dist/jquery.js}"></script>
+    <script th:src="@{/node_modules/popper.js/dist/umd/popper.js}"></script>
+    <script th:src="@{/node_modules/bootstrap/dist/js/bootstrap.js}"></script>
+      
+    <script>
+        
+        $(function () {
+        
+            $('[data-toggle="popover"]').popover()
+        
+        })
+      
+    </script>
+
+  </body>
+</html>

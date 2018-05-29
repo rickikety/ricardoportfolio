@@ -1,0 +1,77 @@
+.header-site{
+	background-image: url(../imgs/coding-on-laptop_4460x4460.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-attachment: fixed;
+
+	height: 870px;
+
+	color: #fff;
+	font-size: 20px
+	font-weight: bold;
+	padding-bottom: 400px; 
+	padding-top: 200px;
+}
+
+.pModal{
+	text-indent: 15px;	
+}
+
+.botao{
+	text-align: right;
+}
+
+.imagemCard{
+	max-width: auto;
+	max-height: auto;
+	min-width: auto;
+	min-height: auto;
+}
+
+.imagemCard3{
+	max-width: 100;
+}
+.font-h1{
+	font-weight: bold;
+	font-size: 40px;
+	font-border: 1px solid black;
+}
+
+.fundo{
+	background-color: rgba(33,33,33,0.45)
+}
+
+.fundop{
+	padding-top: 20px;
+	padding-bottom: 10px;
+}
+
+.paragrafo{
+	text-indent: 15px;
+}
+.font-p{
+	font-weight: bold;
+}
+
+.content-site{
+	padding-top: 200px;
+	padding-bottom: 50px;
+	
+}
+
+.footer-site{
+	margin-top: 30px;
+	padding-top: 100px;
+	height: 200px;
+}
+
+#minhaImagem{
+  max-width:200px;
+  max-height:350px;
+  width: auto;
+  height: auto;
+}
+.borda{
+	border: 1px solid #000;
+}
